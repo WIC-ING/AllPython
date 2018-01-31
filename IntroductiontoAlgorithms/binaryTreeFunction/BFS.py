@@ -12,6 +12,7 @@ def BFS(root):
             nodeList.append(node.left)
         if node.right!=None:
             nodeList.append(node.right)
+    print(list(node.val for node in nodeList))
     return nodeList
 
 
