@@ -4,7 +4,6 @@ b = [-1, 1, 2, 3, 4]
 
 c = [1,2]
 
-
 def FindMaxCrossingSubArray(a, low, mid, high):
     maxLeft = maxRight = mid
 
