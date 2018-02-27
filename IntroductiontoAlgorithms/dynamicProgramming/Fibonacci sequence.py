@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 
+import time
+
 # 函数名称：fibonacciSequence
 # 函数功能：自底向上 -- 产生斐波切纳数列中的某一位
 # 输入参数：int
@@ -22,5 +24,16 @@ def fibonacciSequence_up_to_buttom(n):
     return fibonacciSequence_up_to_buttom(n-1) + fibonacciSequence_up_to_buttom(n-2)
 
 
-print fibonacciSequence(10)
-print fibonacciSequence_up_to_buttom(10)
+n = 35
+
+startTime = time.time()
+print fibonacciSequence(n)
+endTime   = time.time()
+print '共耗时：{}s\n\n'.format(endTime-startTime)
+
+
+startTime = time.time()
+print fibonacciSequence_up_to_buttom(n)
+endTime   = time.time()
+print '共耗时：{}s'.format(endTime-startTime)
+
