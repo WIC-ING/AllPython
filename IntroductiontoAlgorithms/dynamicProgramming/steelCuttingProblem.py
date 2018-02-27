@@ -33,8 +33,8 @@ def MEMOIZED_CUT_ROD_AUX(prices, n, r):
     r[n] = q
     return q
 
-
-
+# 函数名称：BOTTOM_UP_CUT_ROD
+# 函数功能：自底向上的寻找切割的最大利润
 def BOTTOM_UP_CUT_ROD(prices, n):
     r = [float('-inf')] * (n+1)
     r[0] = 0
@@ -45,8 +45,24 @@ def BOTTOM_UP_CUT_ROD(prices, n):
         r[j] = q
     return r[n]
 
+
+# 函数名称：EXTENDED_BOTTOM_UP_CUT_ROD
+# 函数功能：自底向上的寻找切割的最大利润，并且保存切割方案的最优解中第一段的长度
+def EXTENDED_BOTTOM_UP_CUT_ROD(prices, n):
+    r = [float('-inf')] * (n+1)
+    r[0] = 0; s = [0]*(n+1)
+    for j in range(1, n+1):
+        q = float('-inf')
+        for i in range(1, j+1):
+            if q<prices[i]+r[j-i]:
+                q=prices[i] + r[j-i]
+                s[j] = i
+        r[j] = q
+    return r[n], s
+
 n = 5
 
 print cut_rod(prices, n)
 print MEMOIZED_CUT_ROD(prices, n)
 print BOTTOM_UP_CUT_ROD(prices, n)
+print EXTENDED_BOTTOM_UP_CUT_ROD(prices, n)
