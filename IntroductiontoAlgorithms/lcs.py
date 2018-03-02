@@ -1,3 +1,5 @@
+# -*- coding:utf-8 -*-
+
 def lcs(a, b):
     lengths = [[0 for j in range(len(b)+1)] for i in range(len(a)+1)]
     # row 0 and column 0 are initialized to 0 already
@@ -7,6 +9,7 @@ def lcs(a, b):
                 lengths[i+1][j+1] = lengths[i][j] + 1
             else:
                 lengths[i+1][j+1] = max(lengths[i+1][j], lengths[i][j+1])
+
     # read the substring out from the matrix
     result = ""
     x, y = len(a), len(b)
@@ -21,3 +24,8 @@ def lcs(a, b):
             x -= 1
             y -= 1
     return result
+
+X = ['A', 'B', 'C', 'B', 'D', 'A', 'B']
+Y = ['B', 'D', 'C', 'A', 'B', 'A']
+
+print lcs(X, Y)
