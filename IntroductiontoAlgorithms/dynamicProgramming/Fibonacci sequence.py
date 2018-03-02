@@ -27,13 +27,13 @@ def fibonacciSequence_up_to_buttom(n):
 n = 35
 
 startTime = time.time()
-print fibonacciSequence(n)
+print (fibonacciSequence(n))
 endTime   = time.time()
-print '共耗时：{}s\n\n'.format(endTime-startTime)
+print ('共耗时：{}s\n\n'.format(endTime-startTime))
 
 
 startTime = time.time()
-print fibonacciSequence_up_to_buttom(n)
+print (fibonacciSequence_up_to_buttom(n))
 endTime   = time.time()
-print '共耗时：{}s'.format(endTime-startTime)
+print ('共耗时：{}s'.format(endTime-startTime))
 

@@ -31,13 +31,13 @@ def MATRIX_CHAIN_ORDER(p):
 def PRINT_OPTIMAL_PARENS(s, i, j):
     # print 'begin', i, j,
     if i==j:
-        print 'A{}'.format(i),
+        print('A{}'.format(i), end='')
     else:
 
-        print '(',
+        print ('(', end='')
         PRINT_OPTIMAL_PARENS(s, i, s[i-1][j-1])
         PRINT_OPTIMAL_PARENS(s, s[i-1][j-1]+1, j)
-        print ')',
+        print (')', end='')
 
 
 p = [5, 10, 3, 12, 5, 50, 6]
