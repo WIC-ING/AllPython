@@ -9,7 +9,6 @@ def binarySearch(nums, n, dir='right'):
     if dir == 'right':
         while left <= right:
             key = int((left + right) / 2)
-
             if nums[key] <= n:
                 left += 1
             else:
