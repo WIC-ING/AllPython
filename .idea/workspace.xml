@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="49fafa93-b38f-4d9c-99b9-cd9f8e60762f" name="默认" comment="Merge branch 'master' of github.com:WIC-ING/AllPython&#10;&#10;# Conflicts:&#10;#&#9;.idea/AllPython.iml&#10;#&#9;.idea/misc.xml">
-      <change beforePath="" afterPath="$PROJECT_DIR$/TF_Test_0306/charactor03/.ipynb_checkpoints/charactor03.2-checkpoint.ipynb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/TF_Test_0306/charactor03/.ipynb_checkpoints/chractor03.1-checkpoint.ipynb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/TF_Test_0306/charactor03/Introduction.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/TF_Test_0306/charactor03/charactor03.2.ipynb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/TF_Test_0306/charactor03/charactor3.4.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/TF_Test_0306/charactor03/chractor03.1.ipynb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/datasets/MNIST_data/t10k-images-idx3-ubyte.gz" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/datasets/MNIST_data/t10k-labels-idx1-ubyte.gz" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/datasets/MNIST_data/train-images-idx3-ubyte.gz" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/datasets/MNIST_data/train-labels-idx1-ubyte.gz" />
+    <list default="true" id="49fafa93-b38f-4d9c-99b9-cd9f8e60762f" name="默认" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/tensorFlowTest/TF-&gt;Test/test.py" afterPath="$PROJECT_DIR$/tensorFlowTest/TF-&gt;Test/test.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -381,7 +370,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520340849613</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="'add TF0306'">
+      <created>1520351936725</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1520351936725</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -415,7 +411,8 @@
     <MESSAGE value="'贪心算法之活动选择问题'" />
     <MESSAGE value="Merge branch 'master' of github.com:WIC-ING/AllPython&#10;&#10;# Conflicts:&#10;#&#9;.idea/AllPython.iml&#10;#&#9;.idea/misc.xml" />
     <MESSAGE value="Merge activitiesSelection" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge activitiesSelection" />
+    <MESSAGE value="'add TF0306'" />
+    <option name="LAST_COMMIT_MESSAGE" value="'add TF0306'" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
