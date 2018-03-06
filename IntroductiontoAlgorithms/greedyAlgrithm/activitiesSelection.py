@@ -22,10 +22,40 @@ def RECURSIVE_ACTIVITY_SELECTOR(S, F, k, n):
     else:
         return set()
 
+# 函数名称：GREEDY_ACTIVITY_SELECTOR
+# 函数功能：迭代贪心算法 之活动选择问题
+# 输入参数：list[int], list[int]
+# 返回参数：set()
+def GREEDY_ACTIVITY_SELECTOR(S, F):
+    n = len(S)
+    A = set([1])
+    k = 0
+    for m in range(1, n):
+        if S[m]>=F[k]:
+            A.add(m)
+            k=m
+    return A
 
 
 
+def dynamicProgramActSel(S, F):
+    n = len(S)
+    # setOfAct = set()
+    r = [[0 for j in range(n)] for i in range(n)]
+
+    for i in range(1,n):
+        r[i][i] = 1
+
+    for l in range(2, n):
+        for i in range(1, n-l+1):
+            j = i+l-1
+            for k in range(j-i):
+                print(i,j)
+                #     r[i][j] =  r[i][k] + r[k][j]
+    return r
 
 print('一共有{}个活动'.format(len(S)-1))
 
-print('最大兼容活动集为:{}'.format(sorted(list(  RECURSIVE_ACTIVITY_SELECTOR(S, F, 0, 11)  ))))
+# print('最大兼容活动集为:{}'.format(sorted(list(  RECURSIVE_ACTIVITY_SELECTOR(S, F, 0, 11)  ))))
+# print('最大兼容活动集为:{}'.format(sorted(list(  GREEDY_ACTIVITY_SELECTOR(S, F)  ))))
+print('最大兼容活动集为:{}'.format( dynamicProgramActSel(S, F) ))
