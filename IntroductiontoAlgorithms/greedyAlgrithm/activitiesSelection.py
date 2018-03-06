@@ -77,9 +77,9 @@ print('最大兼容活动集为:{}'.format(sorted(list(  GREEDY_ACTIVITY_SELECTO
 print('用时：{}s'.format(time.time()-start))
 
 
-print '动态规划算法：'
+print ('动态规划算法：')
 # dynamicProgramActSel(S, F)
 start = time.time()
 for line in  dynamicProgramActSel(S, F):
-    print line
+    print (line)
 print('用时：{}s'.format(time.time()-start))
