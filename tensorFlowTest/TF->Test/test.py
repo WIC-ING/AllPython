@@ -1,6 +1,6 @@
 #设置提示信息的级数（只显示 warning 和 Error）
-import os
-os.environ['TF_CPP_MIN_LOG_LEVEL']='2'
+# import os
+# os.environ['TF_CPP_MIN_LOG_LEVEL']='2'
 # export TF_CPP_MIN_LOG_LEVEL=2
 
 # 导入tensorflow与numpy
